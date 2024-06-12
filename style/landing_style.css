@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1a0327;
+    font-family: 'Montserrat';
+    height: 350vh;
+}
+.container-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/wz-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+.logo .fas{
+    font-size: 50px;
+}
+.logo p{
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+}
+#btn{
+    width: 250px;
+    height: 10vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+
+.content-wrapper{
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.content-desc h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.content-desc p{
+    width: 550px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.content-desc span{
+    color: #FEC53A;
+}
+#btn2{
+    width: 350px;
+    height: 10vh;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background: #FEC53A;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+    border-radius: 20px;
+    text-align: left;
+}
+.ghost{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgba(38, 2, 39, 0.849),rgb(204, 115, 14));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.ghost::after{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url(../img/ghost-symbole.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.logo-section .fas{
+    font-size: 6rem;
+    color: #FEC53A;
+}
+.logo-section h1{
+    width: 250px;
+    font-size: 2rem;
+    color: #FEC53A;
+    margin-left: 10px;
+}
+/*--------------------------------*/
+.container-2{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/pc-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.pc{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgba(38, 2, 39, 0.849),rgb(204, 115, 14));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.pc::after{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url(../img/streamer.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+/*---------------------------------*/
+.container-3{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-1-wrapper{
+    width: 70%;
+    margin: auto;
+}
+.section-1-wrapper h1{
+    width: 500px;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 400;
+    margin: auto auto;
+}
+/*--------------Start of Image Slider-----------------*/
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto auto;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+/*----CSS FOR MANUAL NAVIGATION----*/
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+} 
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #40D3DC;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+/*----CSS FOR AUTOMATIC NAVIGATION----*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+}
+#radio4:checked ~ .navigation-auto .auto-btn5{
+    background: #40D3DC;
+}
+/*------------------End of Image Slider----------------------*/
+
+/*---------------------------*/
+.container-4{  
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    /*background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/flames.jpeg");*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* For the Background Video to cover the container */ 
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+  
+    width: 400px;
+    height: 200px;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*------------Start of Login---------------*/
+.box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(35, 36, 42, 0.75);
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+}
+.form-wrapper{
+    width: 400px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 150px;
+}
+.form-wrapper::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #550381, #550381, #550381);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.form-wrapper::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #550381, #550381, #550381);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderLine::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #fec53a, #fec53a, #fec53a);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.borderLine::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #fec53a, #fec53a, #fec53a);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    padding: 50px 40px;
+    border-radius: 8px;  
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+.box form h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.box form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form .inputBox input:valid ~ span, .box form .inputBox input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .inputBox input:valid ~ i, .box form .inputBox input:focus ~ i{
+    height: 44px;
+}
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+}
+.box form .links a{
+    margin: 10px 5px;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.box form .links a:hover, .box form .links a:nth-child(2){
+    color: #fff;
+}
+.box form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+.box form input[type="submit"]:active{
+    opacity: 0.8;
+}
+/*------------End of Login---------------*/
+
+.msg{
+    position: absolute;
+    background-color: yellow;
+    width: 100%;
+    min-height: 10%;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+/*--------------Footer--------------------*/
+footer{
+    width: 100%;
+    height: 55vh;
+    background: #1a0327;
+    display: flex;
+    align-items: center;
+    
+}
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo{
+    height: 12vh;
+    background-color: #FEC53A;
+    color: #000;
+    line-height: 1.7rem;
+}
+ul h3{
+    color: #fff;
+    font-weight: 450;
+}
+ul li{
+    list-style: none;
+    line-height: 2.5rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a .fab{
+    font-size: 1.2rem;
+    color: #FEC53A;
+    margin-right: 15px;
+}
+ul li a:hover{
+    color: #FEC53A;
+}
+.footer-bottom{
+    width: 100%;
+    height: 7vh;
+    background: #1B1919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+.footer-bottom span{
+    color: #FEC53A;
+    font-weight: bold;
+}

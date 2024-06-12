@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/signup_style.css">
+    
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <script src="script/signup_script.js"></script>
+        <form name="signup_form" action="registration.php" method="POST">
+            <h2>Sign up</h2>
+            <div class="inputBox">
+                <input type="text" name="username" required="required">
+                <span>Username*</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="phone" required="required">
+                <span>Phone*</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="email" required="required">
+                <span>Email*</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required="required">
+                <span>Password*</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="cpassword" required="required">
+                <span>Confirm Password*</span>
+                <i></i>
+            </div>
+            <div class="button-wrapper">
+                <input type="submit" name="submit" value="Register" onclick="return verify_fields()">
+                <input type="reset" value="Reset">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

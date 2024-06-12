@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1a0327;
+    font-family: 'Montserrat';
+    height: 350vh;
+}
+.container-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/wz-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+.logo .fas{
+    font-size: 50px;
+}
+.logo p{
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+}
+#btn{
+    width: 250px;
+    height: 10vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+/*-----------------------------*/
+.content-wrapper{
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.content-desc h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.content-desc ul{
+    margin-left: 30px;
+}
+.content-desc span{
+    color: #FEC53A;
+}
+/*--------------------------------*/
+.container-2{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/pc-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*-------------------------------*/
+
+/*-------------------------------*/
+footer{
+    width: 100%;
+    height: 55vh;
+    background: #1a0327;
+    display: flex;
+    align-items: center;
+    
+}
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo{
+    height: 12vh;
+    background-color: #FEC53A;
+    color: #000;
+    line-height: 1.7rem;
+}
+ul h3{
+    color: #fff;
+    font-weight: 450;
+}
+ul li{
+    list-style: none;
+    line-height: 2.5rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a .fab{
+    font-size: 1.2rem;
+    color: #FEC53A;
+    margin-right: 15px;
+}
+ul li a:hover{
+    color: #FEC53A;
+}
+.footer-bottom{
+    width: 100%;
+    height: 7vh;
+    background: #1B1919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+.footer-bottom span{
+    color: #FEC53A;
+    font-weight: bold;
+}
+/*--------------------------*/
+.container-3{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)),
+    url(../img/jedi-cover3.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.game-categories{
+    width: 70%;
+    margin: 50px auto;
+    position: relative;
+}
+.game-categories h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #FEC53A;
+}
+.game-wrapper{
+    display: flex;
+}
+.gw{
+    width: 120px;
+    height: 120px;
+    background: url(../img/battlefield1-cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px 0 0;
+    border-radius: 10px;
+}
+.gw:hover{
+    transform: translateY(-10px);
+}
+.left{
+    position: relative;
+    right: -140px;
+}
+
+.gw-1{
+    background: url(../img/forza5-cover4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-2{
+    background: url(../img/jedi-cover3.webp);
+    background-size: cover;
+    background-position: center;
+}
+.gw-3{
+    background: url(../img/gtav-cover1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-4{
+    background: url(../img/nfs-heat.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-5{
+    background: url(../img/mwii-cover.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-6{
+    background: url(../img/breakpoint-cover.webp);
+    background-size: cover;
+    background-position: center;
+}
+.gw-7{
+    background: url(../img/high-cover.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-8{
+    background: url(../img/battlefield-cover.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-9{
+    background: url(../img/mincraft-cover.jpeg);
+    background-size: cover;
+    background-position: center;
+}
