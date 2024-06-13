@@ -59,7 +59,7 @@
                 <p>A warm place to enjoy the vibes and meet the pros</p>
                 <p>An all-in-one experience</p>
 
-                <button id="btn2">Challenge Rakuto Now</button>
+                <button id="btn2">Let's dive in</button>
             </div>
             <div class="ghost"></div>
         </div>
@@ -95,6 +95,7 @@
             <!-- Start of Image Slider -->
             <div class="slider">
                 <div class="slides">
+
                     <!-- Start of radio buttons -->
                     <input type="radio" name="radio-btn" id="radio1">
                     <input type="radio" name="radio-btn" id="radio2">
@@ -102,6 +103,7 @@
                     <input type="radio" name="radio-btn" id="radio4">
                     <input type="radio" name="radio-btn" id="radio5">
                     <!-- End of radio buttons -->
+
                     <!-- Start of Sliding images -->
                     <div class="slide first">
                         <img src="img/gtav-cover1.jpg" alt="">
@@ -119,6 +121,7 @@
                         <img src="img/lol-cover5.jpg" alt="">
                     </div>
                     <!-- End of Sliding images -->
+
                     <!-- Start of auto navigation -->
                     <div class="navigation-auto">
                         <div class="auto-btn1"></div>
@@ -128,6 +131,7 @@
                         <div class="auto-btn5"></div>
                     </div>
                     <!-- End of auto navigation -->
+                     
                 </div>
                 <!-- Start of manual navigation -->
                 <div class="navigation-manual">
